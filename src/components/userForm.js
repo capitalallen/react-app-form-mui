@@ -136,7 +136,7 @@ const UserForm = () => {
                 onClose={handleClose}
                 message="User created successfully!"
             />
-            {errorMessage!=''?<Alert severity='='error>{errorMessage}</Alert>:null}
+            {errorMessage!==''?<Alert severity='='error>{errorMessage}</Alert>:null}
             {isSubmitting?<CircularProgress />: null}
             <Button type="submit" variant="contained" color="primary" disabled={isSubmitting || isDisabled} onClick={() => {
                 handleSubmit()
